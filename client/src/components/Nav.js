@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Nav = () => {
+export default function Nav() {
   return (
     <div>
       <nav className="flex justify-between p-4 border-b-2 border-gray-200">
@@ -9,24 +10,13 @@ const Nav = () => {
         </div>
         <ul className="flex gap-4">
           <li>
-            <a href="#">
-              <span>Home</span>
-            </a>
+            <Link to="">Home</Link>
           </li>
           <li>
-            <a href="#">
-              <span>LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>Github</span>
-            </a>
+            <Link to="test">Test</Link>
           </li>
         </ul>
       </nav>
     </div>
   );
 };
-
-export default Nav;

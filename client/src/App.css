@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.App {
+    min-height: 100vh;
+    border: 1px solid black;
+}
+
+section {
+    min-height: 100vh;
+}

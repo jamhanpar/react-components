@@ -1,27 +1,24 @@
-import './App.css';
+import "./App.css";
 
 // Components
-import Nav from './components/Nav';
-import Footer from './components/Footer';
-import Dropdown from './components/Dropdown/Dropdown';
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
-// Layouts
-import ThreeColGrid from './layout/ThreeColGrid';
-import OneTwoColGrid from './layout/OneTwoColGrid';
-import TwoOneColGrid from './layout/TwoOneColGrid';
-import OneColGrid from './layout/OneColGrid';
+// Pages
+import Home from "./pages/Home";
+import Test from "./pages/Test";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Dropdown />
-      <main className="mx-6 md:mx-16">
-        <ThreeColGrid />
-      </main>
-      <OneTwoColGrid />
-      <TwoOneColGrid />
-      <OneColGrid />
+      <section className="border border-blue-400">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/test" element={<Test />} />
+        </Routes>
+      </section>
       <Footer />
     </div>
   );

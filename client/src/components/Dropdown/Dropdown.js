@@ -22,7 +22,6 @@ const Dropdown = () => {
             <option value="Option 3">Option 3</option>
           </select>
         </div>
-        <select multiple={true} value={['B', 'C']} />
       </form>
     </div>
   );
