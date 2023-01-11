@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       <Dropdown />
-      <main className="mx-6 md:mx-16 border border-red-400">
+      <main className="mx-6 md:mx-16">
         <ThreeColGrid>
           <div className="p-4 flex justify-center items-center">
             <Card />

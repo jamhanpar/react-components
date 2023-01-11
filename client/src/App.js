@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <section className="border border-blue-400">
+      <section>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/test" element={<Test />} />
