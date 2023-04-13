@@ -1,23 +1,25 @@
-import "./App.css";
+import './App.css';
 
 // Components
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 // Pages
-import Home from "./pages/Home";
-import Test from "./pages/Test";
-import { Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import Develop from './pages/Develop';
+import Test from './pages/Test';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Nav />
-      <section className="border border-blue-400">
-        <Routes>
+      <section className="min-h-screen">
+        {/* <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/develop" element={<Develop />} />
           <Route path="/test" element={<Test />} />
-        </Routes>
+        </Routes> */}
       </section>
       <Footer />
     </div>
