@@ -1,6 +1,6 @@
 import { FiMenu, FiHome } from 'react-icons/fi';
 import { FaRegAddressCard } from 'react-icons/fa';
-import { GiShirtButton } from 'react-icons/gi';
+// import { GiShirtButton } from 'react-icons/gi';
 
 export default function Sidebar() {
   return <div className="w-full py-2 bg-slate-800 text-white sm:w-48">
@@ -18,7 +18,7 @@ export default function Sidebar() {
             <span>Cards</span>
         </div>
         <div className="flex flex-row items-center gap-3 mx-3 my-2 cursor-pointer">
-            <GiShirtButton />
+            {/* <GiShirtButton /> */}
             <span>Buttons</span>
         </div>
     </div>
