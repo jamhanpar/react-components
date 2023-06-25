@@ -2,24 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaEarlybirds } from 'react-icons/fa';
 import { FiMenu } from 'react-icons/fi';
+import HamburgerMenu from './HamburgerMenu';
 
 const links = [
   { label: 'Home', url: '' },
   { label: 'Develop', url: 'develop' },
   { label: 'Test', url: 'test' },
-  { label: 'Extra', url: 'extra' },
 ];
 
 export default function Nav({ companyTitle = 'Company Name' }) {
   const linkItems = links.map((link) => (
-    <li className="border border-gray-400 p-2 px-5 rounded-full shadow-md">
+    <li className="border border-gray-400 p-2 px-5 rounded-full shadow-md hover:shadow-inner hover:border-gray-700 cursor-pointer">
       <Link to={link.url}>{link.label}</Link>
     </li>
   ));
 
-  const iconOrLinks = true ? (
+  // TODO: update true to screensize
+  const iconOrLinks = false ? (
     <div className="flex items-center h-6">
-      <FiMenu className="w-full h-full" />
+      {/* <FiMenu className="w-full h-full" /> */}
+      <HamburgerMenu links={linkItems} />
     </div>
   ) : (
     <ul className="flex gap-4">{linkItems}</ul>
@@ -27,7 +29,7 @@ export default function Nav({ companyTitle = 'Company Name' }) {
 
   return (
     <div className="w-full">
-      <nav className="flex justify-between py-5 px-5">
+      <nav className="flex justify-between py-4 px-4 sm:py-5 sm:px-5">
         <div className="flex flex-row items-center gap-2 w-full">
           <div className="h-full">
             <FaEarlybirds className="h-full w-full" />
