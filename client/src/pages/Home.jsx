@@ -14,7 +14,7 @@ import OneColGrid from '../layouts/OneColGrid';
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <main className="w-full">
       <Dropdown />
       <main className="mx-6 md:mx-16 border border-red-400">
         <ThreeColGrid>
@@ -32,6 +32,6 @@ export default function Home() {
       <OneTwoColGrid />
       <TwoOneColGrid />
       <OneColGrid />
-    </div>
+    </main>
   );
 }
