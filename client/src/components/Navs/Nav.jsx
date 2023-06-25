@@ -29,7 +29,10 @@ export default function Nav({
       <HamburgerMenu links={linkItems} />
     </div>
   ) : (
-    <ul className='flex gap-4'>{linkItems}</ul>
+    <ul className='flex gap-4'>
+      {linkItems}
+      {showDarkMode && <DarkModeBtn />}
+    </ul>
   );
 
   return (
@@ -42,7 +45,6 @@ export default function Nav({
           <h1 className='font-bold'>{companyTitle}</h1>
         </div>
         {iconOrLinks}
-        {showDarkMode && <DarkModeBtn />}
       </nav>
     </div>
   );
