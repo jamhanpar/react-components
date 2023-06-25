@@ -33,7 +33,7 @@ export function userReducer(user, action) {
     }
   }
 
-export default function userReducer() {
-  const [user, dispatch] = useReducer(userReducer, {});
-  return [user, dispatch];
-}
+// export default function userReducer() {
+//   const [user, dispatch] = useReducer(userReducer, {});
+//   return [user, dispatch];
+// }

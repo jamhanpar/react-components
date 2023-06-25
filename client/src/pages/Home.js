@@ -7,10 +7,10 @@ import Card1 from '../components/Cards/Card1';
 import Card2 from '../components/Cards/Card2';
 
 // Layouts
-import ThreeColGrid from '../layout/ThreeColGrid';
-import OneTwoColGrid from '../layout/OneTwoColGrid';
-import TwoOneColGrid from '../layout/TwoOneColGrid';
-import OneColGrid from '../layout/OneColGrid';
+import ThreeColGrid from '../layouts/ThreeColGrid';
+import OneTwoColGrid from '../layouts/OneTwoColGrid';
+import TwoOneColGrid from '../layouts/TwoOneColGrid';
+import OneColGrid from '../layouts/OneColGrid';
 
 export default function Home() {
   return (
