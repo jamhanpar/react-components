@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import Dropdown from '../components/Dropdown/Dropdown';
+import Dropdown from '../components/Dropdowns/Dropdown';
 import Card from '../components/Cards/Card';
 import Card1 from '../components/Cards/Card1';
 import Card2 from '../components/Cards/Card2';

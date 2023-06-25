@@ -1,4 +1,4 @@
-import './Flipcard.css';
+import './Flipcard.scss';
 
 export default function FlipCard() {
   function FrontOfCard() {

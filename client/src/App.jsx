@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 // import UserContext from './contexts/UserContext';
 
 // Components
-import Nav from './components/Nav/Nav';
+import Nav from './components/Navs/Nav';
 import Footer from './components/Footer';
 
 // Pages
@@ -24,12 +24,12 @@ export default function App() {
       <section className="min-h-screen">
         {/* <AppContext>
           <UserContext.Provider value={user}> */}
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/develop" element={<Develop />} />
-            <Route path="/test" element={<Test />} />
-          </Routes>
-          {/* </UserContext.Provider>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/develop" element={<Develop />} />
+          <Route path="/test" element={<Test />} />
+        </Routes>
+        {/* </UserContext.Provider>
         </AppContext> */}
       </section>
       <Footer />

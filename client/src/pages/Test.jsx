@@ -1,8 +1,8 @@
 import TestLayout from '../layouts/TestLayout';
 
 // Testing Component
-import Sidebar from '../components/Sidebar/Sidebar';
-import Toggle from '../components/Toggle/Toggle';
+import Sidebar from '../components/Sidebars/Sidebar';
+import Toggle from '../components/Toggles/Toggle';
 import FlipCard from '../components/Cards/FlipCard';
 
 export default function Test() {
