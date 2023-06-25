@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import DarkModeBtn from '../components/Buttons/DarkModeBtn';
 import { DarkModeContext } from '../contexts/DarkModeContext';
 
-export default function Develop() {
+export default function Dev() {
   const { darkMode } = useContext(DarkModeContext);
 
   return (

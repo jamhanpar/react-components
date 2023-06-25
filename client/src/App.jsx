@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 // Pages
 import Home from './pages/Home';
-import Develop from './pages/Develop';
+import Dev from './pages/Dev';
 import Test from './pages/Test';
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
         <section className='min-h-screen'>
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/develop' element={<Develop />} />
+            <Route path='/dev' element={<Dev />} />
             <Route path='/test' element={<Test />} />
           </Routes>
         </section>

@@ -6,7 +6,7 @@ import DarkModeBtn from '../Buttons/DarkModeBtn';
 
 const links = [
   { label: 'Home', url: '' },
-  { label: 'Develop', url: 'develop' },
+  { label: 'Dev', url: 'dev' },
   { label: 'Test', url: 'test' },
 ];
 
