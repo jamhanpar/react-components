@@ -11,8 +11,11 @@ const links = [
 ];
 
 export default function Nav({ companyTitle = 'Company Name' }) {
-  const linkItems = links.map((link) => (
-    <li className="border border-gray-400 p-2 px-5 rounded-full shadow-md hover:shadow-inner hover:border-gray-700 cursor-pointer">
+  const linkItems = links.map((link, index) => (
+    <li
+      key={link.label + index}
+      className="border border-gray-400 p-2 px-5 rounded-full shadow-md hover:shadow-inner hover:border-gray-700 cursor-pointer"
+    >
       <Link to={link.url}>{link.label}</Link>
     </li>
   ));

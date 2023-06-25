@@ -12,8 +12,11 @@ export default function Test() {
     { title: 'Flip Card', component: <FlipCard /> },
   ];
 
-  const renderComponents = components.map(({ title, component }) => (
-    <div className="flex flex-col justify-center items-center gap-2">
+  const renderComponents = components.map(({ title, component }, index) => (
+    <div
+      key={title + index}
+      className="flex flex-col justify-center items-center gap-2"
+    >
       <div className="text-2xl">{title}</div>
       {component}
     </div>
