@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 // import { useContext } from 'react';
 import { Route, Routes } from 'react-router-dom';
 

@@ -7,12 +7,12 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
 // React 17 Syntax
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>,
+//   document.getElementById('root')
+// );
 
 // React 18 Syntax
 // function AppWithCallbackAfterRender() {
@@ -20,10 +20,17 @@ ReactDOM.render(
 //     console.log('rendered');
 //   });
 
-//   return <App />;
+// return <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+// ;
 // }
 
-// const container = document.getElementById('root');
-// const root = createRoot(container); // createRoot(container!) if you use TypeScript
-// root.render(<App />);
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
 // root.render(<AppWithCallbackAfterRender />);
