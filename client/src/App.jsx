@@ -9,7 +9,7 @@ import { DarkModeProvider } from './contexts/DarkModeContext';
 
 // Components
 import Nav from './components/Navs/Nav';
-import Footer from './components/Footer';
+import Footer from './components/Footers/Footer';
 
 // Pages
 import Home from './pages/Home';

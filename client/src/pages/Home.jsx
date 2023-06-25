@@ -14,17 +14,17 @@ import OneColGrid from '../layouts/OneColGrid';
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className='w-full'>
       <Dropdown />
-      <main className="mx-6 md:mx-16 border border-red-400">
+      <main className='mx-6 md:mx-16 border border-red-400'>
         <ThreeColGrid>
-          <div className="p-4 flex justify-center items-center">
+          <div className='p-4 flex justify-center items-center'>
             <Card />
           </div>
-          <div className="p-4 flex justify-center items-center">
+          <div className='p-4 flex justify-center items-center'>
             <Card1 />
           </div>
-          <div className="p-4 flex justify-center items-center">
+          <div className='p-4 flex justify-center items-center'>
             <Card2 />
           </div>
         </ThreeColGrid>
