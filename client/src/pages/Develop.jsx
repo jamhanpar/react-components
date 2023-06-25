@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import DarkModeBtn from '../components/Buttons/DarkModeBtn';
 
 export default function Develop() {
   return (
-    <Fragment>
+    <main className='flex justify-center items-center'>
       <DarkModeBtn />
-    </Fragment>
+    </main>
   );
 }
