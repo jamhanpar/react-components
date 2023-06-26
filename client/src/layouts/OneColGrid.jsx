@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ItemCard from '../components/Item Card/ItemCard';
+import ItemCard from '../components/Cards/ItemCard';
 
 const OneColGrid = () => {
   return (
