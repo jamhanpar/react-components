@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 interface ButtonProps {
   classname?: string;
-  buttonType?: 'primary' | 'secondary' | 'tertiary';
+  buttonType?: 'primary' | 'secondary';
   backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
   label: string;
