@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import PolaroidFilm from '../components/Polaroid/PolaroidFilm';
-import hawaii from './assets/darren-lawrence-rffyXd7-4yQ-unsplash.jpg';
+// import hawaii from './assets/darren-lawrence-rffyXd7-4yQ-unsplash.jpg';
+import mockData from '../mock/data.json';
+
+const { polaroidFilm } = mockData;
 
 const meta = {
   title: 'Components/Polaroid Film',
@@ -10,7 +13,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    imageSrc: { control: 'text' },
+    imageSrc: { control: 'select', options: [images['hawaii']] },
     imageAlt: { control: 'text' },
     description: { control: 'text' },
     direction: { control: 'select', options: ['left', 'right', 'up', 'down'] },
@@ -22,9 +25,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    imageSrc: hawaii,
-    imageAlt: 'Button',
-    description: "April 2023 Ho'omaluhia Botanical Garden",
+    imageSrc: polaroidFilm.imageSrc,
+    imageAlt: polaroidFilm.imageAlt,
+    description: polaroidFilm.description,
     direction: 'left',
   },
 };

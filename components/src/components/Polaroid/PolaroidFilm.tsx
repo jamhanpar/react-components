@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import './PolaroidFilm.scss';
 
 interface PolaroidProps {
-  imageSrc?: string;
-  imageAlt?: string;
-  description: string;
-  direction: 'left' | 'right' | 'up' | 'down';
+  imageSrc: string;
+  imageAlt: string;
+  description?: string;
+  direction?: 'left' | 'right';
+  rotationAngle?: number;
 }
 
 export default function PolaroidFilm({
@@ -14,14 +15,17 @@ export default function PolaroidFilm({
   imageAlt,
   description,
   direction,
+  rotationAngle,
 }: PolaroidProps) {
-  const rotation = useMemo(
-    () => Math.ceil(Math.random() * 25) + 10 * (1 % 2 === 0 ? 1 : -1),
-    [direction]
-  );
+  const rotation =
+    Math.ceil(Math.random() * 25) * (direction === 'right' ? 1 : -1);
 
   return (
-    <Wrapper style={{ transform: `rotate(${rotation}deg)` }}>
+    <Wrapper
+      style={{
+        transform: `rotate(${rotationAngle ? rotationAngle : rotation}deg)`,
+      }}
+    >
       <ImageWrapper>
         <Image src={imageSrc} alt={imageAlt} />
       </ImageWrapper>
@@ -53,13 +57,18 @@ const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  /* add inner box shadow */
+  border-radius: 4px;
+  box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5); */
 `;
 
 const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
-  box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const TextWrapper = styled.div`
@@ -73,7 +82,7 @@ const Text = styled.span`
   margin-left: 1em;
   margin-right: 1em;
 
-  font-family: 'Just Another Hand', cursive;
+  font-family: 'Just Another Hand';
   font-weight: 400;
   font-style: normal;
   font-size: 1.25em;
