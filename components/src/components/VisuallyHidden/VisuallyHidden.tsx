@@ -1,13 +1,7 @@
-import React, { ReactNode, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-const VisuallyHidden = ({
-  children,
-  ...delegated
-}: {
-  children: ReactNode;
-  [key: string]: any;
-}) => {
+export const VisuallyHidden = ({ children, ...delegated }: any) => {
   const [forceShow, setForceShow] = useState(false);
 
   useEffect(() => {
@@ -49,5 +43,3 @@ const Wrapper = styled.div`
   padding: 0;
   border: 0;
 `;
-
-export default VisuallyHidden;
