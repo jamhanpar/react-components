@@ -1,8 +1,20 @@
 {
   "polaroidFilm": {
     "imageSrc": "https://images.unsplash.com/photo-1520627900660-e152fd1ee167?q=80&w=3076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "imageAlt": "Button",
+    "imageAlt": "Ho'omaluhia Botanical Garden",
     "description": "April 2023 Ho'omaluhia Botanical Garden",
+    "direction": "left"
+  },
+  "polaroidFilm2": {
+    "imageSrc": "https://images.unsplash.com/photo-1584148721201-b6432e0d5106?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "imageAlt": "Mount Baker, Washington",
+    "description": "Mount Baker, Washington",
+    "direction": "right"
+  },
+  "polaroidFilm3": {
+    "imageSrc": "https://images.unsplash.com/photo-1562680802-9cf8b15f419d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "imageAlt": "Seongsan Ilchubong, Jeju, Korea",
+    "description": "Seongsan Ilchubong, Jeju, Korea",
     "direction": "left"
   }
 }

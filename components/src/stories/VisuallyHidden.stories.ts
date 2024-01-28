@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { VisuallyHidden } from '../components/VisuallyHidden/VisuallyHidden';
 
 const meta = {
-  title: 'Components/VisuallyHidden',
+  title: 'Components/Visually Hidden',
   component: VisuallyHidden,
   parameters: {
     layout: 'centered',

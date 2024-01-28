@@ -4,16 +4,18 @@ import Container from '../components/Container/Container';
 const meta = {
   title: 'Layouts/Container',
   component: Container,
-  parameters: {
-    layout: 'centered',
-  },
+  parameters: { layout: 'centered' },
   tags: ['autodocs'],
-  argTypes: {},
+  argTypes: {
+    classname: { control: 'text' },
+  },
 } satisfies Meta<typeof Container>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    classname: 'container',
+  },
 };
