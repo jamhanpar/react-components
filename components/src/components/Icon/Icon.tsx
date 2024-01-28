@@ -26,7 +26,12 @@ const Icon = ({
 
   return (
     <Wrapper
-      style={{ '--size': size + 'px', '--stroke-width': strokeWidth + 'px' }}
+      style={
+        {
+          '--size': size + 'px',
+          '--stroke-width': strokeWidth + 'px',
+        } as React.CSSProperties
+      }
       {...delegated}
     >
       <IconIllustration color='currentColor' size={size} />
