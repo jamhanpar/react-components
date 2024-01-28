@@ -4,25 +4,27 @@ import styled from 'styled-components';
 // Import Nunito Sans font from Google Fonts, available in fonts.scss
 
 export default function Text({
-  color = '#666666',
   content,
+  color = '#666666',
+  linkHoverColor = '#0297f5',
   link,
   linkLabel,
 }: {
-  color?: string;
   content: string;
+  color?: string;
   link?: string;
   linkLabel?: string;
+  linkHoverColor?: string;
 }) {
   return (
-    <Wrapper color={color}>
+    <Wrapper color={color} linkHoverColor={linkHoverColor}>
       {`${content} `}
       <Link href={link}>{linkLabel}</Link>
     </Wrapper>
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ color?: string; linkHoverColor?: string }>`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -40,7 +42,7 @@ const Link = styled.a`
   transition: transform 150ms ease-out, color 150ms ease-out;
 
   &:hover {
-    color: #0297f5;
+    color: ${({ linkHoverColor }: any) => linkHoverColor};
     cursor: pointer;
     -webkit-transform: translateY(-1px);
     -moz-transform: translateY(-1px);
