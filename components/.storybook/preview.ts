@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react';
 import '../src/styles/storybook.scss';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 const GlobalStyles = createGlobalStyle`
@@ -11,8 +11,6 @@ const GlobalStyles = createGlobalStyle`
 
 export const decorators = [
   withThemeFromJSXProvider({
-    defaultTheme: 'light',
-    Provider: ThemeProvider,
     GlobalStyles,
   }),
 ];

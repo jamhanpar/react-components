@@ -24,11 +24,13 @@ export default function IconInput({
   icon,
   width = 250,
   size,
+  placeholder,
   ...delegated
 }: {
   label: string;
   icon: string;
-  width: number;
+  width?: number;
+  placeholder?: string;
   size: 'small' | 'large';
 }) {
   const styles = STYLES[size];
