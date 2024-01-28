@@ -64,6 +64,7 @@ export default function IconInput({
 }
 
 const Wrapper = styled.label`
+  font-family: 'Nunito Sans', sans-serif;
   position: relative;
   display: flex;
   align-items: center;
@@ -92,6 +93,7 @@ const TextInput = styled.input<{ gap: string }>`
   font-size: var(--font-size);
   border: none;
   border-bottom: var(--border-thickness) solid ${COLORS.black};
+  font-family: inherit;
   color: inherit;
   font-weight: 700;
   padding-left: var(--height);
@@ -99,6 +101,7 @@ const TextInput = styled.input<{ gap: string }>`
   outline-offset: 3px;
 
   &::placeholder {
+    font-family: inherit;
     font-weight: 400;
     color: ${COLORS.gray500};
   }
