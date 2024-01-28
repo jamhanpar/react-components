@@ -45,7 +45,8 @@ const Wrapper = styled.div`
   background-color: white;
   width: 240px;
   height: 320px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 1em;
   display: flex;
   flex-direction: column;
