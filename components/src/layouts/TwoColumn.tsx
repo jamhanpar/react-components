@@ -8,8 +8,8 @@ export default function TwoColumnLayout({
 }) {
   return (
     <Wrapper>
-      <Sidebar></Sidebar>
-      <Main>{children}</Main>
+      <Sidebar>{children && (children as React.ReactNode[])[0]}</Sidebar>
+      <Main>{children && (children as React.ReactNode[])[1]}</Main>
     </Wrapper>
   );
 }
