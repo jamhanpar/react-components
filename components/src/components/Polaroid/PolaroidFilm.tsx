@@ -8,6 +8,7 @@ interface PolaroidProps {
   description?: string;
   direction?: 'left' | 'right';
   rotationAngle?: number;
+  onclick?: () => void;
 }
 
 export default function PolaroidFilm({
@@ -16,6 +17,7 @@ export default function PolaroidFilm({
   description,
   direction,
   rotationAngle,
+  onclick,
 }: PolaroidProps) {
   const rotation =
     Math.ceil(Math.random() * 25) * (direction === 'right' ? 1 : -1);
@@ -25,6 +27,7 @@ export default function PolaroidFilm({
       style={{
         transform: `rotate(${rotationAngle ? rotationAngle : rotation}deg)`,
       }}
+      onClick={onclick}
     >
       <ImageWrapper>
         <Image src={imageSrc} alt={imageAlt} />
@@ -48,6 +51,13 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  /* add styling for hover */
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 `;
 
 const ImageWrapper = styled.div`
