@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-export const VisuallyHidden = ({ children, ...delegated }: any) => {
+export default function VisuallyHidden({ children, ...delegated }: any) {
   const [forceShow, setForceShow] = useState(false);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export const VisuallyHidden = ({ children, ...delegated }: any) => {
   }
 
   return <Wrapper {...delegated}>{children}</Wrapper>;
-};
+}
 
 const Wrapper = styled.div`
   position: absolute;
