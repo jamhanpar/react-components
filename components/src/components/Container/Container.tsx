@@ -113,6 +113,7 @@ export default function Container({
 }
 
 const Wrapper = styled.div`
+  font-family: 'Nunito Sans', sans-serif;
   min-height: 100vh;
   min-width: 100vw;
   margin: 0 auto;
