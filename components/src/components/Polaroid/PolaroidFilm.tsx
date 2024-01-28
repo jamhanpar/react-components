@@ -93,7 +93,7 @@ const Text = styled.span`
   margin-left: 1em;
   margin-right: 1em;
 
-  font-family: 'Just Another Hand';
+  font-family: 'Just Another Hand' !important;
   font-weight: 400;
   font-style: normal;
   font-size: 1.25em;

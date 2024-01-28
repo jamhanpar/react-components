@@ -39,9 +39,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    placeholder: 'Search…',
-    label: 'Search',
     icon: 'search',
+    label: 'Search',
     size: 'small',
+    placeholder: 'Search…',
   },
 };
