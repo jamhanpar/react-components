@@ -8,7 +8,13 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {},
+  argTypes: {
+    content: { control: 'text' },
+    linkLabel: { control: 'text' },
+    color: { control: 'color' },
+    linkHoverColor: { control: 'color' },
+    link: { control: 'text' },
+  },
 } satisfies Meta<typeof Text>;
 
 export default meta;
@@ -16,9 +22,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    color: '#666666',
     content: 'Special thanks to',
-    link: 'www.google.com',
     linkLabel: 'James Park',
+    color: '#666666',
+    linkHoverColor: '#0297f5',
+    link: 'www.google.com',
   },
 };
