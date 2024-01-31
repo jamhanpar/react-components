@@ -146,7 +146,13 @@ const RightRail = styled.div`
 
   @media (${VIEWPORTS.tablet}) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+
+    /* Make every child element in the right rail be sticky */
+    > * {
+      position: sticky;
+      top: 0;
+    }
   }
 `;
 
