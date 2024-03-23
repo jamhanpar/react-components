@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import PolaroidFilm from '../components/Polaroid/PolaroidFilm';
-import { polaroidFilm } from '../mock/data.json';
 
 export default function Grid({
   gap = 0,
