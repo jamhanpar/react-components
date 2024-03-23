@@ -5,7 +5,7 @@ interface PolaroidProps {
   imageSrc: string;
   imageAlt: string;
   description?: string;
-  direction?: 'left' | 'right';
+  direction?: 'left' | 'right' | string;
   rotationAngle?: number;
   onclick?: () => void;
 }
