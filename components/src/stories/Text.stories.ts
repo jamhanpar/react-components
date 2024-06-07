@@ -14,6 +14,10 @@ const meta = {
     color: { control: 'color' },
     linkHoverColor: { control: 'color' },
     link: { control: 'text' },
+    fontFamily: {
+      control: 'select',
+      options: ['asap', 'nunitoSans', 'roboto'],
+    },
   },
 } satisfies Meta<typeof Text>;
 
@@ -27,5 +31,6 @@ export const Default: Story = {
     color: '#666666',
     linkHoverColor: '#0297f5',
     link: 'www.google.com',
+    fontFamily: 'asap',
   },
 };
