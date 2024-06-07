@@ -3,29 +3,39 @@ import styled from 'styled-components';
 // Note:
 // Import Nunito Sans font from Google Fonts, available in fonts.scss
 
+const fonts: {
+  [key: string]: string;
+} = {
+  asap: 'Asap',
+  nunitoSans: 'Nunito Sans',
+  roboto: 'Roboto',
+};
+
 export default function Text({
   content,
   color = '#666666',
   linkHoverColor = '#0297f5',
   link,
   linkLabel,
+  fontFamily = 'asap',
 }: {
   content: string;
   color?: string;
   link?: string;
   linkLabel?: string;
   linkHoverColor?: string;
+  fontFamily?: keyof typeof fonts; // Update the type of 'fontFamily' to be one of the keys of the 'fonts' object
 }) {
   return (
-    <Wrapper color={color} linkHoverColor={linkHoverColor}>
+    <Wrapper color={color} linkHoverColor={linkHoverColor} fontFamily={fonts[fontFamily]}>
       {`${content} `}
       <Link href={link}>{linkLabel}</Link>
     </Wrapper>
   );
 }
 
-const Wrapper = styled.div<{ color?: string; linkHoverColor?: string }>`
-  font-family: 'Nunito Sans', sans-serif;
+const Wrapper = styled.div<{ color?: string; linkHoverColor?: string; fontFamily?: string }>`
+  font-family: ${({fontFamily}: any) => `${fontFamily}, Nunito Sans, sans-serif`};
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
