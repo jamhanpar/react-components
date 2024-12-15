@@ -3,8 +3,12 @@ import { Button } from './Button';
 
 const SpookyButton = styled(Button)`
   font-family: 'Spooky Halloween Font';
-  background-color: orange;
-  color: black;
+
+  .btn_contents {
+    border: 2px solid black;
+    background-color: orange;
+    color: black;
+  }
 `;
 
 export default SpookyButton;
