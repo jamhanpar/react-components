@@ -58,10 +58,10 @@ type GridWrapperProps = {
 const GridWrapper = styled.div<GridWrapperProps>`
   display: grid;
   height: 300px;
-  grid-auto-flow: ${props => props.autoFlow};
-  grid-template-columns: ${props => props.columnSpecs};
-  grid-template-rows: ${props => props.rowSpecs};
-  gap: ${props => props.spacing || '0'};
+  grid-auto-flow: ${(props) => props.autoFlow};
+  grid-template-columns: ${(props) => props.columnSpecs};
+  grid-template-rows: ${(props) => props.rowSpecs};
+  gap: ${(props) => props.spacing || '0'};
 `;
 
 const GridItem = styled.div`

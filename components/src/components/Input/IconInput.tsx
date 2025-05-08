@@ -48,7 +48,7 @@ export default function IconInput({
         <Icon id={icon ? icon : 'search'} size={styles.iconSize} />
       </IconWrapper>
       <TextInput
-        type='text'
+        type="text"
         gap={size === 'small' ? '8px' : '16px'}
         style={
           {

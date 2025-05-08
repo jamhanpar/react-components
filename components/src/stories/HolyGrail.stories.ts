@@ -8,7 +8,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     title: { control: 'text' },
-    children: { control: 'array' },
+    children: { control: false },
   },
 } satisfies Meta<typeof HolyGrailLayout>;
 

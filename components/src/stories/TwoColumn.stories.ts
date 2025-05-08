@@ -7,7 +7,7 @@ const meta = {
   parameters: { layout: 'centered' },
   tags: ['autodocs'],
   argTypes: {
-    children: { control: 'array' },
+    children: { control: false },
   },
 } satisfies Meta<typeof TwoColumnLayout>;
 

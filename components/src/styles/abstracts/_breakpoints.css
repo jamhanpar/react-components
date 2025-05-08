@@ -1,0 +1,23 @@
+:root {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+/* Example usage */
+.example {
+  padding: 10px;
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .example {
+    padding: 20px;
+  }
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+  .example {
+    padding: 30px;
+  }
+}
