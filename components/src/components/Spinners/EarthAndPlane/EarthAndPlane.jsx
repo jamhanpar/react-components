@@ -17,8 +17,8 @@ export default function EarthAndPlane() {
       </div>
 
       {/* Plane */}
-      <div className='p-2 rounded-full position absolute -bottom-12'>
-        <i className='fa-solid fa-plane rotate-[190deg] text-3xl text-neutral-400'></i>
+      <div className="p-2 rounded-full position absolute -bottom-12">
+        <i className="fa-solid fa-plane rotate-[190deg] text-3xl text-neutral-400"></i>
       </div>
     </div>
   );

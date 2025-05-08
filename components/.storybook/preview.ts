@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react';
-import '../src/styles/storybook.scss';
+import '../src/styles/vendors/_storybook.scss';
 import { createGlobalStyle } from 'styled-components';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 

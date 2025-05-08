@@ -21,7 +21,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <Wrapper
-      type='button'
+      type="button"
       className={`${buttonType} ${classname}`}
       style={{ backgroundColor }}
       {...props}

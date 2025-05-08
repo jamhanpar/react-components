@@ -16,9 +16,9 @@ export default function Container({
   return (
     <Wrapper className={classname}>
       <RightRail>
-        <PolaroidFilm {...polaroidFilm} direction='left' />
-        <PolaroidFilm {...polaroidFilm2} direction='right' />
-        <PolaroidFilm {...polaroidFilm3} direction='left' />
+        <PolaroidFilm {...polaroidFilm} direction="left" />
+        <PolaroidFilm {...polaroidFilm2} direction="right" />
+        <PolaroidFilm {...polaroidFilm3} direction="left" />
       </RightRail>
       <Content>
         <p>

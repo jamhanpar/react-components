@@ -54,7 +54,7 @@ const GridItem = styled.div`
 `;
 
 const Image = styled.img`
-border-radius: 1rem;
+  border-radius: 1rem;
   object-fit: cover;
   width: 100%;
   height: 100%;

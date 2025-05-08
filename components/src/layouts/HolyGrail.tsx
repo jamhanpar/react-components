@@ -19,22 +19,22 @@ export default function HolyGrailLayout({
           <h2>Navigation</h2>
           <NavList>
             <NavItem>
-              <a href='#'>Home</a>
+              <a href="#">Home</a>
             </NavItem>
             <li>
-              <a href='#'>About</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <a href="#">Contact</a>
             </li>
           </NavList>
         </Nav>
         <Main>{children}</Main>
         <Aside>
-          <PolaroidFilm {...polaroidFilm} direction='left' />
-          <PolaroidFilm {...polaroidFilm} direction='right' />
-          <PolaroidFilm {...polaroidFilm} direction='left' />
-          <PolaroidFilm {...polaroidFilm} direction='right' />
+          <PolaroidFilm {...polaroidFilm} direction="left" />
+          <PolaroidFilm {...polaroidFilm} direction="right" />
+          <PolaroidFilm {...polaroidFilm} direction="left" />
+          <PolaroidFilm {...polaroidFilm} direction="right" />
         </Aside>
       </Section>
       <Footer>

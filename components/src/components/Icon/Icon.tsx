@@ -34,7 +34,7 @@ const Icon = ({
       }
       {...delegated}
     >
-      <IconIllustration color='currentColor' size={size} />
+      <IconIllustration color="currentColor" size={size} />
     </Wrapper>
   );
 };

@@ -27,15 +27,24 @@ export default function Text({
   fontFamily?: keyof typeof fonts; // Update the type of 'fontFamily' to be one of the keys of the 'fonts' object
 }) {
   return (
-    <Wrapper color={color} linkHoverColor={linkHoverColor} fontFamily={fonts[fontFamily]}>
+    <Wrapper
+      color={color}
+      linkHoverColor={linkHoverColor}
+      fontFamily={fonts[fontFamily]}
+    >
       {`${content} `}
       <Link href={link}>{linkLabel}</Link>
     </Wrapper>
   );
 }
 
-const Wrapper = styled.div<{ color?: string; linkHoverColor?: string; fontFamily?: string }>`
-  font-family: ${({fontFamily}: any) => `${fontFamily}, Nunito Sans, sans-serif`};
+const Wrapper = styled.div<{
+  color?: string;
+  linkHoverColor?: string;
+  fontFamily?: string;
+}>`
+  font-family: ${({ fontFamily }: any) =>
+    `${fontFamily}, Nunito Sans, sans-serif`};
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -48,8 +57,12 @@ const Link = styled.a`
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: -webkit-transform 150ms ease-out, color 150ms ease-out;
-  transition: transform 150ms ease-out, color 150ms ease-out;
+  -webkit-transition:
+    -webkit-transform 150ms ease-out,
+    color 150ms ease-out;
+  transition:
+    transform 150ms ease-out,
+    color 150ms ease-out;
 
   &:hover {
     color: ${({ linkHoverColor }: any) => linkHoverColor};

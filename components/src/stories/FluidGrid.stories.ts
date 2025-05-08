@@ -9,7 +9,7 @@ const meta = {
   argTypes: {
     gap: { control: 'number' },
     columnMinWidth: { control: 'number' },
-    children: { control: 'none' },
+    children: { control: false },
   },
 } satisfies Meta<typeof FluidGrid>;
 

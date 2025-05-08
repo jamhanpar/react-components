@@ -13,7 +13,9 @@ export default function Masonry() {
     <Wrapper>
       {imageData.map((image: Image, index) => (
         <ListItem key={index}>
-            <a href={image.src}><ItemImage src={image.src} alt={image.alt} /></a>
+          <a href={image.src}>
+            <ItemImage src={image.src} alt={image.alt} />
+          </a>
         </ListItem>
       ))}
     </Wrapper>
