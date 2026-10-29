@@ -11,6 +11,9 @@ import OneTwoColGrid from './layout/OneTwoColGrid';
 import TwoOneColGrid from './layout/TwoOneColGrid';
 import OneColGrid from './layout/OneColGrid';
 
+// Toggle
+import Toggle from './components/Toggle/Toggle';
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +25,7 @@ function App() {
       <OneTwoColGrid />
       <TwoOneColGrid />
       <OneColGrid />
+      <Toggle />
       <Footer />
     </div>
   );
